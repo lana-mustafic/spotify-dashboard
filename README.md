@@ -6,7 +6,7 @@ A modern, personal Spotify dashboard that displays your listening statistics, to
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-## ✨ Features
+## Features
 
 -  **Secure Authentication** - OAuth 2.0 login with Spotify
 -  **Personalized Dashboard** - View your top artists and tracks
@@ -14,7 +14,7 @@ A modern, personal Spotify dashboard that displays your listening statistics, to
 -  **Fast Performance** - Built with Next.js 15 and App Router
 -  **Type Safety** - Full TypeScript implementation
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -28,6 +28,7 @@ A modern, personal Spotify dashboard that displays your listening statistics, to
    ```bash
    git clone https://github.com/your-username/spotify-dashboard.git
    cd spotify-dashboard
+   ```
   
 ## 2. Install dependencies
 ```bash
@@ -58,7 +59,7 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 http://localhost:3000/api/auth/callback/spotify  
 4. Copy your **Client ID** and **Client Secret** into your `.env.local` file  
 
-# 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** Next.js 15 with App Router  
 - **Authentication:** NextAuth.js with Spotify provider  
@@ -82,7 +83,7 @@ src/
 │   └── next-auth.d.ts                # TypeScript type extensions
 └── components/                       # React components
 ```
-# 🎯 What I Learned
+# What I Learned
 
 - Implementing **OAuth 2.0 authentication** with NextAuth.js  
 - **TypeScript integration** with Next.js App Router  
@@ -90,7 +91,7 @@ src/
 - **Environment variable management** and security best practices  
 - **Next.js API route structure** and server-side functionality  
 
-# 🚧 Future Enhancements
+# Future Enhancements
 
 - Data visualizations with **Recharts**  
 - Recent listening history  
@@ -99,11 +100,11 @@ src/
 - Dark/light theme toggle  
 - Mobile-responsive improvements  
 
-# 📄 License
+# License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-# 🤝 Contributing
+# Contributing
 
 Contributions, issues, and feature requests are welcome!  
 Feel free to check the [issues](./issues) page.
