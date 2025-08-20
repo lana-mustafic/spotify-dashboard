@@ -8,11 +8,11 @@ A modern, personal Spotify dashboard that displays your listening statistics, to
 
 ## ✨ Features
 
-- 🔐 **Secure Authentication** - OAuth 2.0 login with Spotify
-- 📊 **Personalized Dashboard** - View your top artists and tracks
-- 🎨 **Modern UI** - Clean, responsive design with Tailwind CSS
-- ⚡ **Fast Performance** - Built with Next.js 15 and App Router
-- 🔒 **Type Safety** - Full TypeScript implementation
+-  **Secure Authentication** - OAuth 2.0 login with Spotify
+-  **Personalized Dashboard** - View your top artists and tracks
+-  **Modern UI** - Clean, responsive design with Tailwind CSS
+-  **Fast Performance** - Built with Next.js 15 and App Router
+-  **Type Safety** - Full TypeScript implementation
 
 ## 🚀 Getting Started
 
@@ -28,7 +28,7 @@ A modern, personal Spotify dashboard that displays your listening statistics, to
    ```bash
    git clone https://github.com/your-username/spotify-dashboard.git
    cd spotify-dashboard
-  ```
+  
 ## 2. Install dependencies
 ```bash
 npm install
