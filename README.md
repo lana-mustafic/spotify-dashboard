@@ -26,7 +26,7 @@ A modern, personal Spotify dashboard that displays your listening statistics, to
 
 ## 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/spotify-dashboard.git
+   git clone https://github.com/lana-mustafic/spotify-dashboard.git
    cd spotify-dashboard
    ```
   
