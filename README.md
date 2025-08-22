@@ -22,7 +22,7 @@ A modern, personal Spotify dashboard that displays your listening statistics, to
 - Spotify Developer Account
 - GitHub Account
 
-### Installation
+# Installation
 
 ## 1. Clone the repository
    ```bash
