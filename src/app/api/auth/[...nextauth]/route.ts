@@ -1,8 +1,12 @@
-// File: src/app/api/auth/[...nextauth]/route.ts
 import NextAuth from "next-auth";
 import SpotifyProvider from "next-auth/providers/spotify";
 
-const handler = NextAuth({
+// ADD this function to generate a random secret
+function generateSecret() {
+  return process.env.NEXTAUTH_SECRET || Buffer.from(Math.random().toString(36)).toString('base64').slice(0, 32);
+}
+
+const authOptions = {
   providers: [
     SpotifyProvider({
       clientId: process.env.SPOTIFY_CLIENT_ID!,
@@ -14,6 +18,34 @@ const handler = NextAuth({
       },
     }),
   ],
+  
+  // Added cookie settings:
+  cookies: {
+    state: {
+      name: "next-auth.state",
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: process.env.NODE_ENV === "production",
+        maxAge: 900, // 15 minutes
+      },
+    },
+    pkceCodeVerifier: {
+      name: "next-auth.pkce.code_verifier",
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: process.env.NODE_ENV === "production",
+        maxAge: 900,
+      },
+    },
+  },
+  
+  // Added this line
+  trustHost: true,
+  
   callbacks: {
     async jwt({ token, account }: any) {
       if (account) {
@@ -26,6 +58,11 @@ const handler = NextAuth({
       return session;
     },
   },
-});
+  
+  // For development:
+  debug: process.env.NODE_ENV === "development",
+};
 
+const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
+export { authOptions };
